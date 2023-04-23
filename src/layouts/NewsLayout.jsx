@@ -3,11 +3,14 @@ import { Container , Row , Col } from 'react-bootstrap';
 import LeftNav from '../pages/Shared/LeftNav/LeftNav';
 import RightNav from '../pages/Shared/RightNav/RightNav';
 import { Outlet } from 'react-router-dom';
+import Header from '../pages/Shared/Header/Header';
+
 
 
 const NewsLayout = () => {
     return (
         <div>
+            <Header></Header>
             <Container>
                 <Row>
                     <Col lg={9}>
@@ -18,6 +21,7 @@ const NewsLayout = () => {
                     </Col>
                 </Row>
             </Container>
+            <Footer></Footer>
         </div>
     );
 };
