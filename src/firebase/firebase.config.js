@@ -4,13 +4,17 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
+
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDe-NJdiJEa9gm3eFRhvkBqGNrPgYQ2cBU",
-  authDomain: "the-news-world-2580.firebaseapp.com",
-  projectId: "the-news-world-2580",
-  storageBucket: "the-news-world-2580.appspot.com",
-  messagingSenderId: "253088409776",
-  appId: "1:253088409776:web:beca76ca0ccf9fb989f375"
+  apiKey: import.meta.env.VITE_apiKey ,
+  authDomain: import.meta.env.VITE_authDomain ,
+  projectId: import.meta.env.VITE_projectId  ,
+  storageBucket: import.meta.env.VITE_storageBucket ,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId  ,
+  appId: import.meta.env.VITE_appId ,
 };
 
 // Initialize Firebase
